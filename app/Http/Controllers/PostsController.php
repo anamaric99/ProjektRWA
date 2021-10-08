@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Intervention\Image\Facades\Image;
+use Intervention\Image\Facades\Image as Image;
 use App\Post;
 use DB;
 
@@ -78,7 +78,7 @@ class PostsController extends Controller
 	    $thumbStore = 'thumb.'.$filename.'_'.time().'.'.$extension;
             $thumb = Image::make($request->file('cover_image')->getRealPath());
             $thumb->resize(80, 80);
-            $thumb->save('storage/cover_images/'.$thumbStore);
+            $thumb->save('../storage/cover_images/'.$thumbStore);
 		
         } else {
             $fileNameToStore = 'noimage.jpg';

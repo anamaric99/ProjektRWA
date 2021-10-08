@@ -22,11 +22,17 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+     <!-- Scripts -->
+     <script src="{{ asset('js/app.js') }}"></script>  
+   
+     <!-- src="{{ URL::asset('js/ckeditor/ckeditor.js') }}" -->
+     <!-- <textarea name="article-ckeditor"></textarea> -->
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
+
+   
 </body>
 </html>

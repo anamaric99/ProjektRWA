@@ -17,4 +17,6 @@
         {{Form::hidden('_method','PUT')}}
         {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
+
+    
 @endsection
