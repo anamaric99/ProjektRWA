@@ -1,0 +1,17 @@
+.panel {
+    margin-bottom: 22px;
+    background-color: #fff;
+    border: 1px solid #00000000;
+    border-radius: 0px;
+    box-shadow: 2px 2px 6px rgb(48 0 98 / 20%);
+}
+
+.panel-default {
+    border-color: #d3e0e9;
+}
+
+.panel-default > .panel-heading {
+    color: #002e57;
+    background-color: #fff;
+    border-color: #1582e05e;
+}
