@@ -30,7 +30,9 @@
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     
     <script>
-        CKEDITOR.replace( 'article-ckeditor' );
+        if(document.getElementsByTagName('textarea').length > 0){
+      CKEDITOR.replace( 'article-ckeditor' );
+                                                             }
     </script>
 
    

@@ -122,9 +122,9 @@ class PostsController extends Controller
             return redirect('/posts')->with('error', 'No Post Found');
         }
 
-        // Check for correct user
-        if(auth()->user()->id !==$post->user_id){
-            return redirect('/posts')->with('error', 'Unauthorized Page');
+        //Check for correct user
+         if(auth()->user()->id !=$post->user_id){
+           return redirect('/posts')->with('error', 'Unauthorized Page');
         }
 
         return view('posts.edit')->with('post', $post);
@@ -194,8 +194,8 @@ class PostsController extends Controller
         }
 
         // Check for correct user
-        if(auth()->user()->id !==$post->user_id){
-            return redirect('/posts')->with('error', 'Unauthorized Page');
+          if(auth()->user()->id !=$post->user_id){
+           return redirect('/posts')->with('error', 'Unauthorized Page');
         }
 
         if($post->cover_image != 'noimage.jpg'){
