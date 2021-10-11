@@ -1,0 +1,15 @@
+.btn-lg, .btn-group-lg > .btn {
+    background-color: #0258a4;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0258a4;
+    border-color: #002e57;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0766baed;
+    border-color: #002e57;
+}
