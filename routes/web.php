@@ -15,6 +15,8 @@
 Route::get('/hello', function () {
     //return view('welcome');
     return '<h1>Hello World</h1>';
+
+    "{{ url('/about') }}"
 });
 
 Route::get('/users/{id}/{name}', function($id, $name){
@@ -24,6 +26,7 @@ Route::get('/users/{id}/{name}', function($id, $name){
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
+// Route::get('{{ url('/about') }}', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 
 Route::resource('posts', 'PostsController');

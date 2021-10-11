@@ -22,11 +22,13 @@
                 &nbsp;
             </ul>
 
+           <!--  href="{{ url('/posts') }}"  -->
+
             <ul class="nav navbar-nav">
-              <li><a href="/">Početna</a></li>
-              <li><a href="/about">O nama</a></li>
-              <li><a href="/services">Tehnologija</a></li>
-              <li><a href="/posts">Proizvodi</a></li>
+              <li><a href="{{ url('/') }}">Početna</a></li>
+              <li><a href="{{ url('/about') }}">O nama</a></li>
+              <li><a href="{{ url('/services') }}">Tehnologija</a></li>
+              <li><a href="{{ url('/posts') }}">Proizvodi</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->
