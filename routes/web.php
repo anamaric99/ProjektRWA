@@ -30,3 +30,4 @@ Route::resource('posts', 'PostsController');
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
+URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g6');
